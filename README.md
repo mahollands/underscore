@@ -14,7 +14,7 @@ Clone the repository and set up a soft link to your ~/bin directory.
 ```
 
 ## Example:
-```bash
+```
 cave@glados$ ls -1
 'HR1 This was a triumph.docx'
 'HR2 Im making a note here.txt'
