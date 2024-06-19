@@ -16,8 +16,12 @@ def spaces_to_underscores(fname):
     os.rename(fname, fname_new)
     print(f"{fname} -> {fname_new}")
 
-# Default to processing all files, otherwise args only
-flist = glob.glob("*") if len(argv) == 1 else argv[1:]
+def main():
+    # Default to processing all files, otherwise args only
+    flist = glob.glob("*") if len(argv) == 1 else argv[1:]
 
-for fname in sorted(flist):
-    spaces_to_underscores(fname)
+    for fname in sorted(flist):
+        spaces_to_underscores(fname)
+
+if __name__ == "__main__":
+    main()
